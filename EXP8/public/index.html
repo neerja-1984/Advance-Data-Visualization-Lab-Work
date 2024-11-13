@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADV EXPT 8</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="https://d3js.org/d3.v7.min.js"></script> <!-- D3.js Library -->
+    <script src="script.js" defer></script> <!-- Link to your JS file -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Forest Coverage Over Time</h1>
+        <div class="dashboard">
+
+            <!-- pie  -->
+            <div class="chart" id="pie-chart">
+                <h2 class="chart-title">Distribution of Forest Cover</h2> <!-- Pie Chart Title -->
+            </div>
+
+            <!-- line animated chart -->
+            <div class="chart" id="line-chart">
+                <h2 class="chart-title">Forest Coverage over the Years of every State/UT</h2> <!-- Line Chart Title -->
+                <button id="pause-button">Pause</button> <!-- Pause/Play Button -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- histogram -->
+    <div class="histogram" id="hist-chart">
+        <h1>Density of Forest Coverage Across All States in India</h1>
+    </div>
+
+    <!-- map -->
+    <div class="container">
+        <h1>Forest Coverage Percentage of Geographical Area</h1>
+        <div class="map-container">
+            <svg id="india-map" width="600" height="600"></svg> <!-- SVG for the India map -->
+        </div>
+    </div>
+</body>
+
+</html>

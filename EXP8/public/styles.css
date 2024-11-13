@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5faf9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.dashboard {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of charts */
+    justify-content: space-around; /* Space out charts */
+    margin-top: 20px;
+} 
+
+.chart {
+    /* border: 1px solid #ccc; */
+    /* background-color: #fff; */
+    background-color: #f2f2f0;
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 300px; /* Allow flexible growth and minimum width */
+    min-width: 300px; /* Set a minimum width for each chart */
+    max-width: 400px; /* Set a maximum width for each chart */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.chart-title {
+    font-size: 18px; /* Adjust the font size */
+    color: #333; /* Change to your preferred color */
+    text-align: center; /* Center align the title */
+    font-weight: bold; /* Make the title bold */
+    margin: 10px 0; /* Add some space above and below the title */
+}
+
+
+h1 {
+    color: #333;
+}
+
+svg {
+    width: 100%; /* Make SVG responsive */
+    height: auto; /* Keep aspect ratio */
+    margin: 20px auto;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2;
+}
+
+.line:hover {
+    stroke-width: 3;
+    opacity: 0.8;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0; /* Start hidden */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Play Button Styles */
+#pause-button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block for layout */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margins */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+/* Hover Effect */
+#pause-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Active Effect */
+#pause-button:active {
+    background-color: #367c3d; /* Even darker green when pressed */
+}
+
+g.layer rect {
+    stroke-width: 1;
+    stroke: #fff;
+}
+
+.axis text {
+    font-size: 12px;
+}
+
+.histogram{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.histogram h1{
+    text-align: center;
+}
+
+
+.state-boundary {
+    stroke: #004B23;
+    stroke-width: 0.5;
+}
+
+.map-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#india-map {
+    /* border: 1px solid #ccc;
+    background-color: #fff; */
+    margin-top: 20px;
+}
